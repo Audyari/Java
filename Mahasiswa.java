@@ -1,16 +1,19 @@
-
+import java.util.Scanner;
 
 public class Mahasiswa {
     public static void main(String[] args) {
      
-        Solution solution = new Solution(); // Membuat objek Solution
+        Scanner masukkan = new Scanner(System.in);
+        int[] array = new int[5];
 
-        String word1 = "Hello";
-        String word2 = "World";
-        
-        String merged = solution.mergeAlternately(word1, word2); // Memanggil metode mergeAlternately
-        
-        System.out.println(merged); // Menampilkan hasil penggabungan
+        for(int i=0; i< array.length; i++){
+            array[i] = masukkan.nextInt();
+        }
+
+        for(int i=0; i< array.length; i++){
+            System.out.print(array[i]+" ");
+        }
+
     }
 }
 
